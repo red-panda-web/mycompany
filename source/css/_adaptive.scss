@@ -1,0 +1,134 @@
+@media (max-width: 1260px){
+	.container{
+		max-width: 970px;
+	}
+
+	/////// the first section ////////
+	.under-header__title{
+		margin: 0 19.4%;
+	}
+
+	.under-header__undertitle{
+		margin: 22px 13% 0 14%;
+	}
+
+	////// the second section ////////
+	.about-us__body-right{
+		padding: 10.5% 3% 0 3%;
+	}
+}
+
+@media (max-width: 992px){
+	.container{
+		max-width: 750px;
+	}
+
+	/////// header ////////
+	.header-body__menu{
+		display: none;
+	}
+
+	.header-body__burger{
+		display: flex;
+	}
+
+	/////// the first section ////////
+	.under-header__title{
+		margin: 0 12.4%;
+	}
+
+	.under-header__undertitle{	
+		margin: 22px 3% 0 3%;
+	}
+
+	////// the second section ////////
+	.about-us__title {
+		font-size: 29px;
+	}
+
+	.about-us__text, .about-us__list li{
+		font-size: 14px;
+	}
+
+	.about-us__body-left{
+		padding: 11.5% 4%;
+	}
+}
+
+@media (max-width: 767px){
+	.container{
+		max-width: none;
+	}
+
+	/////// the first section ////////
+	.under-header__body{
+		justify-content: center;
+		align-items: center;
+	}
+
+	.under-header__title, .under-header__undertitle{
+		margin: 0;
+		text-align: center;
+	}
+
+	.under-header__undertitle{
+		margin-top: 22px;
+	}
+
+	////// the second section ////////
+	.about-us__body-left{
+		display: none;
+	}
+
+	.about-us__body-right{
+		flex-basis: 100%;
+		padding: 8.5% 7% 0 9%;
+	}
+
+	.about-us__title {
+		font-size: 34px;
+	}
+
+	.about-us__text, .about-us__list li{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 600px){
+	/////// the first section ////////
+	.under-header{
+		padding-top: 15%;
+	}
+	
+	.under-header__title{
+		line-height: 42px;
+		font-size: 36px;
+	}
+
+	.under-header__undertitle{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 500px){
+
+	////// the second section ////////
+	.about-us__title {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.about-us__text, .about-us__list li{
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.about-us__text{
+		margin-bottom: 25px;
+	}
+
+	.about-us__list li{
+		background: url("../img/icons/li_icon.svg") left 6px no-repeat;
+	}
+	    
+}
