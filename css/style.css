@@ -220,7 +220,7 @@ header {
 
 .about-us__body-left {
   flex: 0 1 50%;
-  padding: 8.5% 4%;
+  padding: 8.5% 4% 8% 4%;
 }
 .about-us__body-left img {
   max-width: 100%;
@@ -262,7 +262,7 @@ header {
 
 .about-us__list li {
   color: #5a5a5a;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   line-height: 25px;
   letter-spacing: -0.18px;
@@ -273,6 +273,69 @@ header {
 .about-us__list li span {
   font-weight: 600;
   font-style: normal;
+  font-size: 18px;
+}
+
+.team {
+  background: #111111;
+}
+
+.team__body {
+  padding: 8.3% 0 13% 0;
+}
+
+.team__title {
+  font-size: 44px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 107px 0;
+}
+.team__title:after {
+  content: "";
+  display: block;
+  max-width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.team__items {
+  display: flex;
+  padding: 0 3%;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 23px;
+}
+
+.team__photo {
+  width: 128px;
+  height: 127px;
+  background-color: #d7d7d7;
+  border-radius: 50%;
+}
+
+.team__name {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 18px 0 5px 0;
+}
+
+.team__position {
+  font-size: 16px;
+  margin: 0 0 33px 0;
+}
+
+.team__describe {
+  max-width: 260px;
+  line-height: 24px;
+  text-align: center;
 }
 
 @media (max-width: 1260px) {
@@ -290,6 +353,10 @@ header {
 
   .about-us__body-right {
     padding: 10.5% 3% 0 3%;
+  }
+
+  .team__items {
+    padding: 0;
   }
 }
 @media (max-width: 992px) {
@@ -313,6 +380,10 @@ header {
     margin: 22px 3% 0 3%;
   }
 
+  .about-us__body {
+    padding: 0 0 5% 0;
+  }
+
   .about-us__title {
     font-size: 29px;
   }
@@ -323,6 +394,20 @@ header {
 
   .about-us__body-left {
     padding: 11.5% 4%;
+  }
+
+  .team__title {
+    margin: 0 0 50px 0;
+  }
+
+  .team__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team__item {
+    flex: 0 0 25%;
+    margin-top: 5%;
   }
 }
 @media (max-width: 767px) {
@@ -360,6 +445,11 @@ header {
   .about-us__text, .about-us__list li {
     font-size: 18px;
   }
+
+  .team__item {
+    flex: 0 0 50%;
+    margin: 3% 0;
+  }
 }
 @media (max-width: 600px) {
   .under-header {
@@ -377,7 +467,7 @@ header {
 }
 @media (max-width: 500px) {
   .about-us__title {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
   }
 
@@ -392,5 +482,13 @@ header {
 
   .about-us__list li {
     background: url("../img/icons/li_icon.svg") left 6px no-repeat;
+  }
+
+  .team__title {
+    font-size: 36px;
+  }
+
+  .team__item {
+    flex: 0 0 100%;
   }
 }
