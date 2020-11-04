@@ -338,6 +338,84 @@ header {
   text-align: center;
 }
 
+.services__body {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.services__title {
+  color: #222222;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 0.54;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 0 -1%;
+}
+.services__title:after {
+  content: "";
+  display: block;
+  max-width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.services__describe {
+  color: #6c6c6c;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 3%;
+}
+
+.services__items {
+  margin-top: 100px;
+  display: flex;
+  padding: 0 3%;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.item__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 5px solid #fcac45;
+  width: 125px;
+  height: 125px;
+}
+.item__img img {
+  text-align: center;
+}
+
+.item__title {
+  color: #222222;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 0.96;
+  text-transform: uppercase;
+  margin: 25px 0 15px 0;
+}
+
+.item__text {
+  max-width: 244px;
+  color: #222222;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
 @media (max-width: 1260px) {
   .container {
     max-width: 970px;
@@ -409,6 +487,18 @@ header {
     flex: 0 0 25%;
     margin-top: 5%;
   }
+
+  .services__items {
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .services__item {
+    flex: 0 0 25%;
+    margin-top: 5%;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -450,6 +540,10 @@ header {
     flex: 0 0 50%;
     margin: 3% 0;
   }
+
+  .services__item {
+    flex: 0 0 33.333%;
+  }
 }
 @media (max-width: 600px) {
   .under-header {
@@ -484,11 +578,23 @@ header {
     background: url("../img/icons/li_icon.svg") left 6px no-repeat;
   }
 
-  .team__title {
+  .team__title, .services__title {
     font-size: 36px;
   }
 
-  .team__item {
+  .team__item, .services__item {
     flex: 0 0 100%;
+  }
+
+  .services__body {
+    padding: 65px 0;
+  }
+
+  .services__items {
+    margin-top: 30px;
+  }
+
+  .services__describe {
+    font-size: 14px;
   }
 }

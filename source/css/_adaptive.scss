@@ -77,6 +77,20 @@
 		flex: 0 0 25%;
 		margin-top: 5%;
 	}
+
+	/////// the fourth section //////
+
+	.services__items{
+		flex-wrap: wrap;
+		padding: 0;
+		justify-content: center;
+		margin-top: 50px;
+	}
+
+	.services__item{
+		flex: 0 0 25%;
+		margin-top: 5%;
+	}
 }
 
 @media (max-width: 767px){
@@ -122,6 +136,11 @@
 		flex: 0 0 50%;
 		margin: 3% 0;
 	}
+
+	/////// the fourth section //////
+	.services__item{
+		flex:  0 0 33.333%;
+	}
 }
 
 @media (max-width: 600px){
@@ -161,11 +180,21 @@
 		background: url("../img/icons/li_icon.svg") left 6px no-repeat;
 	}
 		 
-	///// the third section //////
-	.team__title{
+	///// the third && fourth sections //////
+	.team__title, .services__title{
 		font-size: 36px;
 	}
-	.team__item{
+	.team__item, .services__item{
 		flex: 0 0 100%;
+	}
+
+	.services__body{
+		padding: 65px 0;
+	}
+	.services__items{
+		margin-top: 30px;
+	}
+	.services__describe{
+		font-size: 14px;
 	}
 }
