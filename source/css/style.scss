@@ -218,7 +218,7 @@ header{
 .team__body {
 	padding: 8.3% 0 13% 0;
 }
-.team__title {
+.team__title, .clients__title {
 	font-size: 44px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -268,12 +268,10 @@ header{
 
 /////// the fourth section //////
 
-.services {
-}
 .services__body {
 	display: flex;
 	flex-direction: column;
-	padding: 100px 0;
+	padding: 100px 0 95px 0;
 }
 .services__title {
 	color: #222222;
@@ -340,4 +338,28 @@ header{
 	line-height: 1.5;
 	text-align: center;
 }
+
+
+////// the fifth section ////////
+
+.clients {
+	background-color: #050505;
+}
+.cleints__body {
+	padding: 105px 0 16.5% 0;
+}
+.clients__row {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.3% 12%;
+}
+.clients__item, .swiper-slide{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-clients, .swiper-button-prev, .swiper-button-next{
+	display: none;
+}
+
 @import "_adaptive.scss";

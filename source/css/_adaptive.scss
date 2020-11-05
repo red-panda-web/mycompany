@@ -17,8 +17,8 @@
 		padding: 10.5% 3% 0 3%;
 	}
 
-	/////// the third section //////
-	.team__items{
+	/////// the third && fifth sections //////
+	.team__items, .clients__row{
 		padding: 0;
 	}
 }
@@ -90,6 +90,26 @@
 	.services__item{
 		flex: 0 0 25%;
 		margin-top: 5%;
+	}
+
+	//////// the fifth section //////
+	.clients{
+		position: relative;
+	}
+	.clients__row{
+		display: none;
+	} 
+	.swiper-clients{
+		display: block;	
+	}	
+	.swiper-button-prev{
+		top: 290px;
+	}
+	.swiper-button-next{
+		top: 290px;
+	}
+	.swiper-button-prev:after, .swiper-button-next:after{
+		color: white;
 	}
 }
 
@@ -181,7 +201,7 @@
 	}
 		 
 	///// the third && fourth sections //////
-	.team__title, .services__title{
+	.team__title, .services__title, .clients__title{
 		font-size: 36px;
 	}
 	.team__item, .services__item{
@@ -196,5 +216,31 @@
 	}
 	.services__describe{
 		font-size: 14px;
+	}
+
+	//////// the fifth section //////
+	.cleints__body{
+		padding: 15% 0 36.5% 0;
+	}
+	.clients__title{
+		line-height: 35px;
+		margin: 0 0 70px 0;
+	}
+	.swiper-button-prev{
+		top: 225px;
+	}
+	.swiper-button-next{
+		top: 225px;
+	}
+	
+}
+
+@media (max-width: 410px){
+	//////// the fifth section //////
+	.swiper-button-prev{
+		top: 245px;
+	}
+	.swiper-button-next{
+		top: 245px;
 	}
 }
