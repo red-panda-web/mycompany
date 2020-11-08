@@ -218,7 +218,7 @@ header{
 .team__body {
 	padding: 8.3% 0 13% 0;
 }
-.team__title, .clients__title {
+.team__title, .clients__title, .testimonials__title {
 	font-size: 44px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -273,7 +273,7 @@ header{
 	flex-direction: column;
 	padding: 100px 0 95px 0;
 }
-.services__title {
+.services__title, .our-work__title {
 	color: #222222;
 	font-size: 44px;
 	font-weight: 600;
@@ -291,7 +291,7 @@ header{
 		margin-top: 35px;
 	}
 }
-.services__describe {
+.services__describe, .our-work__text {
 	color: #6c6c6c;
 	font-size: 16px;
 	font-style: italic;
@@ -319,9 +319,6 @@ header{
 	border: 5px solid #fcac45;
 	width: 125px;
 	height: 125px;
-	img{
-		text-align: center;
-	}
 }
 .item__title{
 	color: #222222;
@@ -330,6 +327,7 @@ header{
 	line-height: 0.96;
 	text-transform: uppercase;
 	margin: 25px 0 15px 0;
+	text-align: center;
 }
 .item__text {
 	max-width: 244px;
@@ -344,6 +342,7 @@ header{
 
 .clients {
 	background-color: #050505;
+	position: relative;
 }
 .cleints__body {
 	padding: 105px 0 16.5% 0;
@@ -353,13 +352,120 @@ header{
 	justify-content: space-between;
 	padding: 0.3% 12%;
 }
-.clients__item, .swiper-slide{
+.clients__item, .clients-slide{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.swiper-clients, .swiper-button-prev, .swiper-button-next{
+.swiper-clients, .swiper-clients__arrow-l, .swiper-clients__arrow-r{
 	display: none;
 }
+.swiper-clients__arrow-l, .swiper-clients__arrow-r{
+	color: white;
+	top: 290px;
+}
 
+/////// the sixth section //////////
+
+.our-work {
+	position: relative;
+}
+.our-work__body{
+	display: flex;
+	flex-direction: column;
+	padding: 8.3% 0 5.9% 0;
+}
+
+.our-work__title {
+	text-align: center;
+	padding: 0 0 0 1.5%;
+	span{
+		font-weight: 300;
+	}
+}
+.our-work__text {
+	margin-bottom: 175px;
+}
+.cards {
+	padding: 0 4%;
+	display: flex;
+	flex-direction: column;
+}
+.cards__row{
+	display: flex;	
+	margin-bottom: 30px;
+	a{
+		margin-right: 30px;
+		transition: opacity 0.5s ease;
+		&:last-child{
+			margin-right: 0;
+		}
+		&:hover{
+			opacity: 0.8;
+		}	
+	}
+}
+.card {
+	max-width: 263px;
+	max-height: 236px;	
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+.swiper-work{
+	width: 100%;
+	display: none;
+}
+.work-slide{
+	display: flex;
+	justify-content: center;
+}
+.swiper-work__arrow-l,.swiper-work__arrow-r{
+	color: black;
+	display: none;
+	top: 465px;
+}
+
+//////// the seventh section ////////
+.testimonials {
+	background-color: #050505;
+}
+.testimonials__body {
+	padding: 103px 0 170px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.testimonials__title {
+	letter-spacing: 0.3px;
+	margin-bottom: 113px;
+	span{
+		font-weight: 300;
+	}
+}
+.testimonials__text {
+	max-width: 931px;;
+	color: #e7e7e7;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.testimonials__author {
+	color: #b2b2b2;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 40px;
+	span{
+		font-weight: 600;
+	}
+}
 @import "_adaptive.scss";
