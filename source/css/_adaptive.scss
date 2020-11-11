@@ -123,6 +123,10 @@
 	}
 
 	/////// the first section ////////
+	.under-header{
+		height: 100vh;
+	}
+	
 	.under-header__body{
 		justify-content: center;
 		align-items: center;
@@ -170,6 +174,36 @@
 	.testimonials__title{
 		line-height: 1;
 	}
+
+	////// last section ////////
+	.contact__body {
+		padding: 60px 0;
+	}
+	.conatct__text{
+		margin-bottom: 40px;
+	}
+	.form__head{
+		flex-wrap: wrap;
+		margin: 0;
+	}
+	.form__name, .form__email{
+		flex: 0 1 100%;
+		margin: 0 0 20px 0;
+		padding: 0 15%;
+	}
+	.form__name + .form__email{
+		margin-left: 0;
+	}
+	.form__message{
+		padding: 0 15%;
+	}
+	.btn{
+		margin-right: 15%;
+	}
+
+	.footer__body{
+		padding: 28px 0;
+	}
 }
 
 @media (max-width: 600px){
@@ -200,6 +234,14 @@
 	.testimonials__title{
 		margin-bottom: 50px;
 	}
+
+	/////// last section /////
+	.form__name, .form__email, .form__message{
+		padding: 0 7%;
+	}
+	.btn{
+		margin-right: 7%;
+	}
 }
 
 @media(max-width: 570px){
@@ -228,9 +270,14 @@
 		text-align: center;
 	}
 
-	.about-us__text, .about-us__list li{
+	.about-us__text{
 		font-size: 14px;
 		text-align: center;
+	}
+
+	.about-us__list li{
+		font-size: 14px;
+		padding-left: 40px;
 	}
 
 	.about-us__text{
@@ -242,7 +289,7 @@
 	}
 		 
 	///// the third && fourth sections //////
-	.team__title, .services__title, .clients__title, .our-work__title, .testimonials__title{
+	.team__title, .services__title, .clients__title, .our-work__title, .testimonials__title, .contact__title{
 		font-size: 36px;
 	}
 	.team__item, .services__item{
@@ -255,7 +302,7 @@
 	.services__items{
 		margin-top: 30px;
 	}
-	.services__describe, .our-work__text,.testimonials__text{
+	.services__describe, .our-work__text,.testimonials__text, .conatct__text{
 		font-size: 14px;
 	}
 
@@ -283,9 +330,26 @@
 }
 
 @media (max-width: 410px){
+	////// the second section /////
+	.about-us__list li{
+		padding-left: 30px;
+	}
 	//////// the fifth section //////
 	.swiper-clients__arrow-l, .swiper-clients__arrow-r{
 		top: 245px;
+	}
+	/////// last section /////
+	.form{
+		max-width: 100%;
+	}
+	.form__name, .form__email, .form__message{
+		padding: 0 6%;
+		input, textarea{
+			max-width: 320px;
+		}
+	}
+	.btn{
+		margin-right: 6%;
 	}
 }
 

@@ -160,12 +160,13 @@ header {
   right: -100%;
   padding: 10%;
   transition: right 0.5s ease 0s;
+  font-size: 18px;
 }
 .burger-menu li {
   margin-right: 35px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 10% 0;
+  margin: 15% 0;
 }
 .burger-menu li a {
   color: #ffffff;
@@ -344,7 +345,7 @@ header {
   padding: 100px 0 95px 0;
 }
 
-.services__title, .our-work__title {
+.services__title, .our-work__title, .contact__title {
   color: #222222;
   font-size: 44px;
   font-weight: 600;
@@ -353,7 +354,7 @@ header {
   text-align: center;
   margin: 0 0 0 -1%;
 }
-.services__title:after, .our-work__title:after {
+.services__title:after, .our-work__title:after, .contact__title:after {
   content: "";
   display: block;
   max-width: 99px;
@@ -363,7 +364,7 @@ header {
   margin-top: 35px;
 }
 
-.services__describe, .our-work__text {
+.services__describe, .our-work__text, .conatct__text {
   color: #6c6c6c;
   font-size: 16px;
   font-style: italic;
@@ -557,6 +558,93 @@ header {
   font-weight: 600;
 }
 
+.contact__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 103px 0;
+}
+
+.conatct__text {
+  max-width: 746px;
+  margin-bottom: 89px;
+}
+
+.form {
+  max-width: 751px;
+}
+
+.form__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form__name label, .form__email label, .form__message label {
+  color: #636363;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  display: block;
+  margin-bottom: 3px;
+}
+.form__name label span, .form__email label span, .form__message label span {
+  color: #db0000;
+}
+
+.form__name + .form__email {
+  margin-left: 30px;
+}
+
+.form__name, .form__email {
+  width: 362px;
+}
+.form__name input, .form__email input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.form__message {
+  margin-bottom: 30px;
+}
+.form__message textarea {
+  width: 100%;
+  height: 165px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  width: 165px;
+  height: 40px;
+  background-color: #fcac45;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  float: right;
+}
+
+.footer {
+  background-color: #222222;
+}
+
+.footer__body {
+  padding: 28px 0 28px 30px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item + .social__item {
+  margin-left: 14px;
+}
+
 @media (max-width: 1260px) {
   .container {
     max-width: 970px;
@@ -670,6 +758,10 @@ header {
     max-width: none;
   }
 
+  .under-header {
+    height: 100vh;
+  }
+
   .under-header__body {
     justify-content: center;
     align-items: center;
@@ -713,6 +805,41 @@ header {
   .testimonials__title {
     line-height: 1;
   }
+
+  .contact__body {
+    padding: 60px 0;
+  }
+
+  .conatct__text {
+    margin-bottom: 40px;
+  }
+
+  .form__head {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .form__name, .form__email {
+    flex: 0 1 100%;
+    margin: 0 0 20px 0;
+    padding: 0 15%;
+  }
+
+  .form__name + .form__email {
+    margin-left: 0;
+  }
+
+  .form__message {
+    padding: 0 15%;
+  }
+
+  .btn {
+    margin-right: 15%;
+  }
+
+  .footer__body {
+    padding: 28px 0;
+  }
 }
 @media (max-width: 600px) {
   .under-header {
@@ -740,6 +867,14 @@ header {
   .testimonials__title {
     margin-bottom: 50px;
   }
+
+  .form__name, .form__email, .form__message {
+    padding: 0 7%;
+  }
+
+  .btn {
+    margin-right: 7%;
+  }
 }
 @media (max-width: 570px) {
   .swiper-work__arrow-l, .swiper-work__arrow-r {
@@ -760,9 +895,14 @@ header {
     text-align: center;
   }
 
-  .about-us__text, .about-us__list li {
+  .about-us__text {
     font-size: 14px;
     text-align: center;
+  }
+
+  .about-us__list li {
+    font-size: 14px;
+    padding-left: 40px;
   }
 
   .about-us__text {
@@ -773,7 +913,7 @@ header {
     background: url("../img/icons/li_icon.svg") left 6px no-repeat;
   }
 
-  .team__title, .services__title, .clients__title, .our-work__title, .testimonials__title {
+  .team__title, .services__title, .clients__title, .our-work__title, .testimonials__title, .contact__title {
     font-size: 36px;
   }
 
@@ -789,7 +929,7 @@ header {
     margin-top: 30px;
   }
 
-  .services__describe, .our-work__text, .testimonials__text {
+  .services__describe, .our-work__text, .testimonials__text, .conatct__text {
     font-size: 14px;
   }
 
@@ -815,8 +955,27 @@ header {
   }
 }
 @media (max-width: 410px) {
+  .about-us__list li {
+    padding-left: 30px;
+  }
+
   .swiper-clients__arrow-l, .swiper-clients__arrow-r {
     top: 245px;
+  }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .form__name, .form__email, .form__message {
+    padding: 0 6%;
+  }
+  .form__name input, .form__name textarea, .form__email input, .form__email textarea, .form__message input, .form__message textarea {
+    max-width: 320px;
+  }
+
+  .btn {
+    margin-right: 6%;
   }
 }
 @media (max-width: 340px) {
