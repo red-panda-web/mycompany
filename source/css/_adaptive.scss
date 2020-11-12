@@ -122,6 +122,9 @@
 		max-width: none;
 	}
 
+	.header-body.scroll{
+		padding: 3% 1%;
+	}
 	/////// the first section ////////
 	.under-header{
 		height: 100vh;
@@ -260,7 +263,7 @@
 
 @media (max-width: 500px){
 
-	.burger-menu{
+	.burger{
 		width: 100%;
 	}
 

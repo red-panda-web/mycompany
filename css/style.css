@@ -79,7 +79,12 @@ body {
 }
 
 header {
-  background-color: #000000;
+  background-color: #0a0a0a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
 }
 
 .container {
@@ -93,6 +98,11 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 4.4% 0 2% 0;
+  transition: padding 0.5s ease;
+}
+
+.header-body.scroll {
+  padding: 2% 0;
 }
 
 .header-body__logo {
@@ -123,62 +133,71 @@ header {
   border-bottom-color: #fcac45;
 }
 
-.header-body__burger {
+.header-body__burger, .burger__close {
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 25px;
   cursor: pointer;
-  z-index: 2;
 }
-.header-body__burger span {
+.header-body__burger span, .burger__close span {
   width: 100%;
   height: 1px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
+  background-color: #fff;
 }
 
-.header-body__burger.active {
-  justify-content: center;
-}
-.header-body__burger.active span:first-child {
-  transform: rotate(45deg);
-}
-.header-body__burger.active span:nth-child(2) {
-  display: none;
-}
-.header-body__burger.active span:last-child {
-  transform: rotate(-45deg);
-}
-
-.burger-menu {
+.burger {
   background-color: gray;
   width: 50%;
   height: 100%;
   position: fixed;
   top: 0;
   right: -100%;
-  padding: 10%;
   transition: right 0.5s ease 0s;
   font-size: 18px;
+  z-index: 12;
 }
-.burger-menu li {
+.burger li {
   margin-right: 35px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 15% 0;
 }
-.burger-menu li a {
+.burger li a {
   color: #ffffff;
 }
 
-.burger-menu.active {
+.burger.active {
   right: 0;
 }
 
+.burger__body {
+  position: relative;
+}
+
+.burger__close {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 32px;
+  right: 30px;
+}
+.burger__close span:first-child {
+  transform: rotate(45deg);
+}
+.burger__close span:last-child {
+  transform: rotate(-45deg);
+}
+
+.burger__menu {
+  padding: 15%;
+}
+
 .under-header {
-  background-color: #000000;
-  padding: 9.8% 0 22% 0;
+  background-color: #0a0a0a;
+  padding: 15.7% 0 22% 0;
 }
 
 .under-header__body {
@@ -278,7 +297,7 @@ header {
 }
 
 .team {
-  background: #111111;
+  background: #0a0a0a;
 }
 
 .team__body {
@@ -416,7 +435,7 @@ header {
 }
 
 .clients {
-  background-color: #050505;
+  background-color: #0a0a0a;
   position: relative;
 }
 
@@ -514,7 +533,7 @@ header {
 }
 
 .testimonials {
-  background-color: #050505;
+  background-color: #0a0a0a;
 }
 
 .testimonials__body {
@@ -629,7 +648,7 @@ header {
 }
 
 .footer {
-  background-color: #222222;
+  background-color: #0a0a0a;
 }
 
 .footer__body {
@@ -756,6 +775,10 @@ header {
 @media (max-width: 767px) {
   .container {
     max-width: none;
+  }
+
+  .header-body.scroll {
+    padding: 3% 1%;
   }
 
   .under-header {
@@ -886,7 +909,7 @@ header {
   }
 }
 @media (max-width: 500px) {
-  .burger-menu {
+  .burger {
     width: 100%;
   }
 

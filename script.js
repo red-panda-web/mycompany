@@ -4,9 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (document.body.clientWidth < 992 && document.body.clientWidth > 767) document.querySelector(".about-us").firstElementChild.classList.remove("container");
 	if (document.body.clientWidth < 600) document.querySelector(".header-body__logo").firstElementChild.innerHTML = "MC";
 
+	//burger menu
 	document.querySelector(".header-body__burger").addEventListener("click", function () {
-		document.querySelector(".header-body__burger").classList.toggle("active");
-		document.querySelector(".burger-menu").classList.toggle("active");
+		document.querySelector(".burger").classList.add("active");
+	});
+	document.querySelector(".burger__close").addEventListener("click", function () {
+		document.querySelector(".burger").classList.remove("active");
 	});
 
 	// clients slider
@@ -31,4 +34,22 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 
+	// header resize
+	window.addEventListener("scroll", function () {
+		document.querySelector(".header-body").classList.add("scroll");
+		if (window.pageYOffset = 0) document.querySelector(".header-body").classList.remove("scroll");
+	})
+
+	// scroll
+	let anchors = document.querySelectorAll('a[href*="#"]');
+	anchors.forEach(function (item) {
+		item.addEventListener("click", function (e) {
+			e.preventDefault();
+			let id = item.getAttribute("href").substr(1);
+			document.getElementById(id).scrollIntoView({
+				behavior: "smooth",
+				block: "start"
+			});
+		});
+	});
 });
