@@ -352,11 +352,16 @@
 		}
 	}
 	.btn{
+		margin-right: 11%;
+	}
+}
+@media (max-width: 380px){
+	/////// last section /////
+	.btn{
 		margin-right: 6%;
 	}
 }
-
-@media(max-width: 340px){
+@media (max-width: 340px){
 	/////// the sixth section ////////
 	.swiper-work__arrow-l,.swiper-work__arrow-r{
 		top: 520px;

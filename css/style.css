@@ -998,6 +998,11 @@ header {
   }
 
   .btn {
+    margin-right: 11%;
+  }
+}
+@media (max-width: 380px) {
+  .btn {
     margin-right: 6%;
   }
 }

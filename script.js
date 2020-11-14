@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				behavior: "smooth",
 				block: "start"
 			});
+			document.querySelector(".burger").classList.remove("active");
 		});
 	});
 });
